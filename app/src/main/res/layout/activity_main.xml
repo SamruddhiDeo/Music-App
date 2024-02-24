@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_30sdp"
+        android:text="Playlists"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_30ssp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/playlistRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:orientation="vertical">-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="@dimen/_15sdp"-->
+    <!--        android:layout_marginBottom="@dimen/_5sdp"-->
+    <!--        android:paddingLeft="@dimen/_30sdp"-->
+    <!--        android:text="Playlists"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="@dimen/_30ssp" />-->
+
+    <!--    <GridLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:columnCount="2">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:padding="@dimen/_13sdp">-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:elevation="@dimen/_10sdp"-->
+    <!--                app:cardCornerRadius="@dimen/_8sdp">-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/img1"-->
+    <!--                    android:layout_width="@dimen/_120sdp"-->
+    <!--                    android:layout_height="@dimen/_120sdp"-->
+    <!--                    android:background="@drawable/custom_corners"-->
+    <!--                    android:src="@drawable/chill_vibes" />-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="@dimen/_5sdp"-->
+    <!--                android:background="@color/playlistNameBg"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="Chill Vibes"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="20sp" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:padding="@dimen/_13sdp">-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:elevation="@dimen/_10sdp"-->
+    <!--                app:cardCornerRadius="@dimen/_8sdp">-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/img2"-->
+    <!--                    android:layout_width="@dimen/_120sdp"-->
+    <!--                    android:layout_height="@dimen/_120sdp"-->
+    <!--                    android:background="@drawable/custom_corners"-->
+    <!--                    android:src="@drawable/party"/>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="@dimen/_5sdp"-->
+    <!--                android:background="@color/playlistNameBg"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="Party Songs"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="20sp" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:padding="@dimen/_13sdp">-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:elevation="@dimen/_10sdp"-->
+    <!--                app:cardCornerRadius="@dimen/_8sdp">-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/img3"-->
+    <!--                    android:layout_width="@dimen/_120sdp"-->
+    <!--                    android:layout_height="@dimen/_120sdp"-->
+    <!--                    android:background="@drawable/custom_corners"-->
+    <!--                    android:src="@drawable/road_trips" />-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="@dimen/_5sdp"-->
+    <!--                android:background="@color/playlistNameBg"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="Road Trips"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="20sp" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:padding="@dimen/_13sdp">-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:elevation="@dimen/_10sdp"-->
+    <!--                app:cardCornerRadius="@dimen/_8sdp">-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/img4"-->
+    <!--                    android:layout_width="@dimen/_120sdp"-->
+    <!--                    android:layout_height="@dimen/_120sdp"-->
+    <!--                    android:background="@drawable/custom_corners"-->
+    <!--                    android:src="@drawable/melody"/>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="@dimen/_5sdp"-->
+    <!--                android:background="@color/playlistNameBg"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="Melody"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="20sp" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:padding="@dimen/_13sdp">-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:elevation="@dimen/_10sdp"-->
+    <!--                app:cardCornerRadius="@dimen/_8sdp">-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/img5"-->
+    <!--                    android:layout_width="@dimen/_120sdp"-->
+    <!--                    android:layout_height="@dimen/_120sdp"-->
+    <!--                    android:background="@drawable/custom_corners"-->
+    <!--                    android:src="@drawable/lonely_melodies"/>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="@dimen/_5sdp"-->
+    <!--                android:background="@color/playlistNameBg"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="Lonely Melodies"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="20sp" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:padding="@dimen/_13sdp">-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:elevation="@dimen/_10sdp"-->
+    <!--                app:cardCornerRadius="@dimen/_8sdp">-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/img6"-->
+    <!--                    android:layout_width="@dimen/_120sdp"-->
+    <!--                    android:layout_height="@dimen/_120sdp"-->
+    <!--                    android:background="@drawable/custom_corners"-->
+    <!--                    android:src="@drawable/romance"/>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="@dimen/_5sdp"-->
+    <!--                android:background="@color/playlistNameBg"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="Romance"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="20sp" />-->
+
+    <!--        </LinearLayout>-->
+    <!--    </GridLayout>-->
+    <!--    </LinearLayout>-->
+    <!--    </ScrollView>-->
+</LinearLayout>
